@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
+import { SharedModule } from '../shared/shared.module';
 import { CourcesComponent } from './cources/cources.component';
 import { CoursesRoutingModule } from './courses-routing.module';
 
@@ -12,7 +13,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class CoursesModule { }
